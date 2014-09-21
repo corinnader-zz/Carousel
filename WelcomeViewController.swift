@@ -10,37 +10,32 @@ import UIKit
 
 class WelcomeViewController: UIViewController, UIScrollViewDelegate {
 
-    @IBOutlet weak var welcomeScrollView: UIScrollView!
-    @IBOutlet weak var welcomeContainerView: UIView!
-    @IBOutlet weak var welcomePageControl: UIPageControl!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Set scroll view delegate to self
+        scrollView.delegate = self
+        
+        //Set scrollview content size
+        scrollView.contentSize = CGSize(width: 1280, height: 320)
+        
+    }
 
-        // Do any additional setup after loading the view.
-       welcomeScrollView.contentSize = welcomeContainerView.frame.size
-        
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        welcomeScrollView.delegate = self
-    }
-    
-    func scrollViewDidEndDecelerating(welcomeScrollView: UIScrollView!) {
-        // Get the current page based on the scroll offset
-        var page : Int = Int(round(welcomeScrollView.contentOffset.x / 320))
-        
-        // Set the current page, so the dots will update
-        welcomePageControl.currentPage = page
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        //Get the current page based on the scroll offset
+        var page : Int = Int(round(scrollView.contentOffset.x / 320))
+        
+        //Set the current page, so the dots will animate
+        pageControl.currentPage = page
+    }
 
     /*
     // MARK: - Navigation

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="uhq-ld-Xb1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="RuK-Bc-D5P">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -151,7 +151,7 @@
                         <outlet property="emailTextField" destination="fO4-Hx-VoE" id="SJI-Er-osl"/>
                         <outlet property="loadingActivityView" destination="a7c-UE-sfR" id="Jg9-MH-40c"/>
                         <outlet property="passwordTextField" destination="Sle-YH-bmb" id="RLJ-f4-rON"/>
-                        <segue destination="uhq-ld-Xb1" kind="modal" identifier="signInSegue" modalTransitionStyle="coverVertical" id="v0j-TR-L3N"/>
+                        <segue destination="RuK-Bc-D5P" kind="modal" identifier="signInSegue" id="Pgs-lP-sGs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEj-Dc-fNX" sceneMemberID="firstResponder"/>
@@ -164,61 +164,54 @@
             <point key="canvasLocation" x="1455" y="-128"/>
         </scene>
         <!--Welcome View Controller-->
-        <scene sceneID="pWX-bP-Ms4">
+        <scene sceneID="n2g-2O-QBp">
             <objects>
-                <viewController id="uhq-ld-Xb1" customClass="WelcomeViewController" customModule="Carousel" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KmN-GU-616">
+                <viewController id="RuK-Bc-D5P" customClass="WelcomeViewController" customModule="Carousel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zAo-Ag-qt7">
                         <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" id="rkf-R9-roU">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="5fQ-yM-VX8">
                                 <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" id="ab5-Vl-yCf">
-                                        <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome1" id="ofc-T0-CM6">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome1" id="Ajc-nr-i2R">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome2" id="2tk-fk-Rgx">
-                                                <rect key="frame" x="320" y="0.0" width="320" height="568"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome3" id="JUx-RB-Ul4">
-                                                <rect key="frame" x="640" y="0.0" width="320" height="568"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome4" id="bxK-yP-4aj">
-                                                <rect key="frame" x="960" y="0.0" width="320" height="568"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
-                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="Xly-Fw-zoc">
-                                                <rect key="frame" x="114" y="515" width="93" height="37"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                <color key="currentPageIndicatorTintColor" red="0.027450980392156862" green="0.63921568627450975" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            </pageControl>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome2" id="Tl4-bf-Vgy">
+                                        <rect key="frame" x="320" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome3" id="HiH-Pg-WyN">
+                                        <rect key="frame" x="640" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome4" id="QWc-Va-v99">
+                                        <rect key="frame" x="960" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="nd9-8g-SLq">
+                                <rect key="frame" x="141" y="511" width="63" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="0.027450980390000001" green="0.63921568630000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
                         </subviews>
+                        <color key="backgroundColor" red="0.010603341055841486" green="0.59884298849943773" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
                     <connections>
-                        <outlet property="welcomeContainerView" destination="ab5-Vl-yCf" id="1If-lf-VPN"/>
-                        <outlet property="welcomePageControl" destination="Xly-Fw-zoc" id="hMJ-eZ-57n"/>
-                        <outlet property="welcomeScrollView" destination="rkf-R9-roU" id="fnd-7d-hft"/>
+                        <outlet property="pageControl" destination="nd9-8g-SLq" id="wxu-k3-Eh7"/>
+                        <outlet property="scrollView" destination="5fQ-yM-VX8" id="Yjg-lJ-nuo"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tgg-om-8Xc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Obd-Tr-XFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1935" y="598"/>
+            <point key="canvasLocation" x="1924" y="592"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YBf-wC-TWx">
