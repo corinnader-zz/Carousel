@@ -12,6 +12,9 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var takeCarouselButton: UIButton!
+    @IBOutlet weak var backupSwitch: UISwitch!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +25,8 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
         //Set scrollview content size
         scrollView.contentSize = CGSize(width: 1280, height: 320)
         
+        takeCarouselButton.alpha = 0
+        self.backupSwitch.alpha = 0
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,6 +40,15 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
         
         //Set the current page, so the dots will animate
         pageControl.currentPage = page
+        
+        //If it's the 3rd page, animate the alpha transparency to 1
+        if page == 3{
+            UIView.animateWithDuration(0.3) {
+                self.takeCarouselButton.alpha = 1
+                self.backupSwitch.alpha = 1
+            }
+            
+        }
     }
 
     /*

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		403B704A19CF7DE5008C44F2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403B704919CF7DE5008C44F2 /* WelcomeViewController.swift */; };
+		403B704C19CF93F8008C44F2 /* ImageTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403B704B19CF93F8008C44F2 /* ImageTimelineViewController.swift */; };
+		403B704E19CFADCB008C44F2 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403B704D19CFADCB008C44F2 /* ConversationsViewController.swift */; };
+		403B705019CFAF57008C44F2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403B704F19CFAF57008C44F2 /* SettingsViewController.swift */; };
+		403B705219CFB7E2008C44F2 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403B705119CFB7E2008C44F2 /* CreateAccountViewController.swift */; };
 		4056E84519CE407600EBE8D3 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4056E84419CE407600EBE8D3 /* IntroViewController.swift */; };
 		4056E84719CE46B000EBE8D3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4056E84619CE46B000EBE8D3 /* SignInViewController.swift */; };
 		408A953319CE1A9100B86759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A953219CE1A9100B86759 /* AppDelegate.swift */; };
@@ -29,6 +33,10 @@
 
 /* Begin PBXFileReference section */
 		403B704919CF7DE5008C44F2 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = ../WelcomeViewController.swift; sourceTree = "<group>"; };
+		403B704B19CF93F8008C44F2 /* ImageTimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTimelineViewController.swift; sourceTree = "<group>"; };
+		403B704D19CFADCB008C44F2 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		403B704F19CFAF57008C44F2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		403B705119CFB7E2008C44F2 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		4056E84419CE407600EBE8D3 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		4056E84619CE46B000EBE8D3 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		405B5BE319CE7CBC002DFCCC /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
@@ -86,7 +94,11 @@
 				408A953619CE1A9100B86759 /* Main.storyboard */,
 				4056E84419CE407600EBE8D3 /* IntroViewController.swift */,
 				4056E84619CE46B000EBE8D3 /* SignInViewController.swift */,
+				403B705119CFB7E2008C44F2 /* CreateAccountViewController.swift */,
 				403B704919CF7DE5008C44F2 /* WelcomeViewController.swift */,
+				403B704B19CF93F8008C44F2 /* ImageTimelineViewController.swift */,
+				403B704D19CFADCB008C44F2 /* ConversationsViewController.swift */,
+				403B704F19CFAF57008C44F2 /* SettingsViewController.swift */,
 				408A953919CE1A9100B86759 /* Images.xcassets */,
 				405B5BE319CE7CBC002DFCCC /* MyPlayground.playground */,
 				408A953B19CE1A9100B86759 /* LaunchScreen.xib */,
@@ -222,8 +234,12 @@
 			files = (
 				408A953319CE1A9100B86759 /* AppDelegate.swift in Sources */,
 				403B704A19CF7DE5008C44F2 /* WelcomeViewController.swift in Sources */,
+				403B705019CFAF57008C44F2 /* SettingsViewController.swift in Sources */,
 				4056E84519CE407600EBE8D3 /* IntroViewController.swift in Sources */,
+				403B705219CFB7E2008C44F2 /* CreateAccountViewController.swift in Sources */,
+				403B704E19CFADCB008C44F2 /* ConversationsViewController.swift in Sources */,
 				4056E84719CE46B000EBE8D3 /* SignInViewController.swift in Sources */,
+				403B704C19CF93F8008C44F2 /* ImageTimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,10 +29,12 @@ class SignInViewController: UIViewController {
     @IBAction func backToIntroUIButton(sender: UIButton) {
         navigationController?.popViewControllerAnimated(true)
     }
+    
     //Tap anywhere to dismiss keyboard
     @IBAction func onTap(sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
+    
     @IBAction func onSignInButton(sender: UIButton) {
         
         loadingActivityView.startAnimating()
