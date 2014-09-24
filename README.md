@@ -8,8 +8,8 @@ This is a project I'm working on for CodePath's iOS for Designers Bootcamp. The 
 
 ###Completed user stories:
 
- * [x] Static photo tiles on the initial screen
-   * [ ] Optional: Photo tiles move with scrolling
+* [x] Static photo tiles on the initial screen
+  * [ ] Optional: Photo tiles move with scrolling
 * Sign In
   * [x] Tapping on email/password reveals the keyboard and shifts the scrollview and Sign In button up.
   * [x] User sees an error alert when no email is present or no password is present.
