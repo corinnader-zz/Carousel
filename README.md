@@ -38,8 +38,8 @@ This is a project I'm working on for CodePath's iOS for Designers Bootcamp. The 
   * [ ] Optional: Show the "Learn more about Carousel" button in the photo timeline.
   * [ ] Optional: Tap the X to dismiss the banner
   * [ ] Optional: Track the 3 events:
-  * [ ] View a photo full screen
-  * [ ] Swipe left and right
+    * [ ] View a photo full screen
+    * [ ] Swipe left and right
 * Share a photo
   * [ ] Optional: Upon completion of the events, mark them green.
   * [ ] Optional: When all events are completed, dismiss the banner.
